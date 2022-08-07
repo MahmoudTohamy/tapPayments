@@ -1,0 +1,76 @@
+/** @format */
+.input-cont {
+  margin-bottom: 7px;
+
+  > span {
+    display: block;
+    color: #112233;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__field-cont {
+    border: 1px solid #1e8ab2;
+    border-radius: 5px;
+    position: relative;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    &--error {
+      border: 1px solid #d00512 !important;
+    }
+
+    input {
+      border-radius: 5px;
+      text-align: start;
+      font-size: 14px;
+      font-weight: 400;
+      border: none;
+      outline: none;
+      height: -webkit-fill-available;
+      width: -webkit-fill-available;
+
+      padding: 9px 13px;
+      svg {
+        display: none;
+      }
+      &::-webkit-inner-spin-button,
+      &::-webkit-calendar-picker-indicator {
+        background: transparent;
+        bottom: 0;
+        color: transparent;
+        cursor: pointer;
+        height: auto;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: auto;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    img {
+      position: absolute;
+    }
+    &__icon {
+      &--en {
+        right: 13px;
+        max-width: 20px !important;
+      }
+      &--ar {
+        left: 13px;
+        max-width: 20px !important;
+      }
+    }
+  }
+
+  &__error-msg {
+    color: #d00000 !important;
+    font-size: 12px !important;
+  }
+  &__password-rule {
+    font-size: 12px !important;
+  }
+}
